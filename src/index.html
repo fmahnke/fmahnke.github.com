@@ -1,0 +1,12 @@
+---
+layout: default
+title: The front page
+---
+
+<p>This is the front page.</p>
+
+<ul>
+  {% for sitePage in site.pages %}
+  <li><a href={{ sitePage.path }}>{{ sitePage.title }}</a> - {{ sitePage.tags }}</li>
+  {% endfor %}
+</ul>

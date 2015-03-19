@@ -1,0 +1,204 @@
+---
+layout: default
+title: Matrix
+tags: matrix
+---
+
+<p class="definition">An <i>m</i> x <i>n</i> <i>matrix</i> is a rectangular array of numbers with m <i>rows</i> and n <i>columns</i>. Each number in the matrix is an <i>entry</i>.</p>
+
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+  <mi>A</mi>
+  <mo>=</mo>
+  <mfenced open="(" close=")">
+    <mtable>
+      <mtr>
+        <mtd><mi>1</mi></mtd><mtd><mi>2.2</mi></mtd><mtd><mi>5</mi></mtd>
+      </mtr>
+      <mtr>
+        <mtd><mi>3</mi></mtd><mtd><mi>4</mi></mtd><mtd><mi>-7</mi></mtd>
+      </mtr>
+    </mtable>
+  </mfenced>
+</mrow>
+</math>
+
+<ul>
+  <li><i>A</i> is a 2x3 matrix.</li>
+  <li>
+    <math>
+      <msub>
+        <mi>a</mi>
+        <mi>2,1</mi>
+      </msub>
+      <mo>=</mo>
+      <mn>3</mn>
+    </math>
+  </li>
+</ul>
+
+
+<p class="definition">A <i>vector</i> (or <i>column vector</i>) is a matrix with
+a single column. A matrix with a single row is a <i>row vector</i>. The entries
+of a vector are its <i>components</i>. A column or row vector whose components are all zeros is a <i>zero vector</i>.</p>
+
+<h3>Matrix Addition and Subtraction</h3>
+
+<p>Two matrices can be added or subtracted if, and only if, they have the same dimensions.</p>
+ 
+<math display="block">
+  <mrow>
+    <msub>
+      <mrow><mo>(</mo><mi>A</mi><mo>+</mo><mi>B</mi><mo>)</mo></mrow>
+      <mi>ij</mi>
+    </msub>
+    <mo>=</mo>
+    <msub>
+      <mi>A</mi>
+      <mi>ij</mi>
+    </msub>
+    <mo>+</mo>
+    <msub>
+      <mi>B</mi>
+      <mi>ij</mi>
+    </msub>
+  </mrow>
+</math>
+
+<math display="block">
+  <mrow>
+    <msub>
+      <mrow><mo>(</mo><mi>A</mi><mo>-</mo><mi>B</mi><mo>)</mo></mrow>
+      <mi>ij</mi>
+    </msub>
+    <mo>=</mo>
+    <msub>
+      <mi>A</mi>
+      <mi>ij</mi>
+    </msub>
+    <mo>-</mo>
+    <msub>
+      <mi>B</mi>
+      <mi>ij</mi>
+    </msub>
+  </mrow>
+</math>
+
+<h3>Matrix Multiplication</h3>
+
+<ul>
+  <li>To obtain the (i,j) entry of AB, multiply row i of A by column j of B.</li>
+</ul>
+
+<math display="block">
+  <mfenced open="(" close=")">
+    <mtable>
+      <mtr>
+        <mtd><mi>2</mi></mtd>
+        <mtd><mi>0</mi></mtd>
+        <mtd><mi>-1</mi></mtd>
+        <mtd><mi>1</mi></mtd>
+      </mtr>
+    </mtable>
+  </mfenced>
+  <mfenced open="(" close=")">
+    <mtable>
+      <mtr>
+        <mtd><mi>1</mi></mtd>
+        <mtd><mi>5</mi></mtd>
+        <mtd><mi>-7</mi></mtd>
+      </mtr>
+      <mtr>
+        <mtd><mi>1</mi></mtd>
+        <mtd><mi>1</mi></mtd>
+        <mtd><mi>0</mi></mtd>
+      </mtr>
+      <mtr>
+        <mtd><mi>0</mi></mtd>
+        <mtd><mi>-1</mi></mtd>
+        <mtd><mi>1</mi></mtd>
+      </mtr>
+      <mtr>
+        <mtd><mi>2</mi></mtd>
+        <mtd><mi>0</mi></mtd>
+        <mtd><mi>0</mi></mtd>
+    </mtable>
+  </mfenced>
+  <mo>=</mo>
+  <mfenced>
+    <mtable>
+      <mtr>
+        <mtd><mi>4</mi></mtd>
+        <mtd><mi>11</mi></mtd>
+        <mtd><mi>-15</mi></mtd>
+      </mtr>
+    </mtable>
+  </mfenced>
+</math>
+
+<math display="block">
+  <mfenced open="(" close=")">
+    <mtable>
+      <mtr>
+        <mtd><mi>2</mi></mtd>
+        <mtd><mi>0</mi></mtd>
+        <mtd><mi>-1</mi></mtd>
+        <mtd><mi>1</mi></mtd>
+      </mtr>
+      <mtr>
+        <mtd><mi>1</mi></mtd>
+        <mtd><mi>2</mi></mtd>
+        <mtd><mi>0</mi></mtd>
+        <mtd><mi>1</mi></mtd>
+      </mtr>
+    </mtable>
+  </mfenced>
+  <mfenced open="(" close=")">
+    <mtable>
+      <mtr>
+        <mtd><mi>1</mi></mtd>
+        <mtd><mi>5</mi></mtd>
+        <mtd><mi>-7</mi></mtd>
+      </mtr>
+      <mtr>
+        <mtd><mi>1</mi></mtd>
+        <mtd><mi>1</mi></mtd>
+        <mtd><mi>0</mi></mtd>
+      </mtr>
+      <mtr>
+        <mtd><mi>0</mi></mtd>
+        <mtd><mi>-1</mi></mtd>
+        <mtd><mi>1</mi></mtd>
+      </mtr>
+      <mtr>
+        <mtd><mi>2</mi></mtd>
+        <mtd><mi>0</mi></mtd>
+        <mtd><mi>0</mi></mtd>
+    </mtable>
+  </mfenced>
+  <mo>=</mo>
+  <mfenced>
+    <mtable>
+      <mtr>
+        <mtd><mi>4</mi></mtd>
+        <mtd><mi>11</mi></mtd>
+        <mtd><mi>-15</mi></mtd>
+      </mtr>
+      <mtr>
+        <mtd><mi>5</mi></mtd>
+        <mtd><mi>7</mi></mtd>
+        <mtd><mi>-7</mi></mtd>
+      </mtr>
+    </mtable>
+  </mfenced>
+</math>
+
+<h5>Related</h5>
+
+<ul>
+  <li><a href="transformation_matrix.html">Transformation Matrix</a></li>
+</ul>
+<h5>References</h5>
+<a href="http://joshua.smcvt.edu/linearalgebra/book.pdf">Linear Algebra</a><br/>
+<a href="http://www.zweigmedia.com/RealWorld/tutorialsf1/frames3_1.html">Tutorial: Matrix addition and scalar multiplication</a>
+<a href="http://www.zweigmedia.com/RealWorld/tutorialsf1/frames3_2.html">Tutorial: Matrix multiplication</a>

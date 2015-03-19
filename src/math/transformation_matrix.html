@@ -1,0 +1,107 @@
+---
+layout: default
+title: Transformation Matrix
+tags: transformation_matrix
+---
+
+<p>Translation Matrix</p>
+
+<math display="block">
+  <mfenced open="(" close=")">
+    <mtable>
+      <mtr>
+        <mtd><mi>1</mi></mtd>
+        <mtd><mi>0</mi></mtd>
+        <mtd><mi>0</mi></mtd>
+        <mtd><mi>X</mi></mtd>
+      </mtr>
+      <mtr>
+        <mtd><mi>0</mi></mtd>
+        <mtd><mi>1</mi></mtd>
+        <mtd><mi>0</mi></mtd>
+        <mtd><mi>Y</mi></mtd>
+      </mtr>
+      <mtr>
+        <mtd><mi>0</mi></mtd>
+        <mtd><mi>0</mi></mtd>
+        <mtd><mi>1</mi></mtd>
+        <mtd><mi>Z</mi></mtd>
+      </mtr>
+      <mtr>
+        <mtd><mi>0</mi></mtd>
+        <mtd><mi>0</mi></mtd>
+        <mtd><mi>0</mi></mtd>
+        <mtd><mi>1</mi></mtd>
+      </mtr>
+    </mtable>
+  </mfenced>
+</math>
+
+<math display="block">
+  <mfenced open="(" close=")">
+    <mtable>
+      <mtr>
+        <mtd><mi>1</mi></mtd>
+        <mtd><mi>0</mi></mtd>
+        <mtd><mi>0</mi></mtd>
+        <mtd><mi>10</mi></mtd>
+      </mtr>
+      <mtr>
+        <mtd><mi>0</mi></mtd>
+        <mtd><mi>1</mi></mtd>
+        <mtd><mi>0</mi></mtd>
+        <mtd><mi>0</mi></mtd>
+      </mtr>
+      <mtr>
+        <mtd><mi>0</mi></mtd>
+        <mtd><mi>0</mi></mtd>
+        <mtd><mi>1</mi></mtd>
+        <mtd><mi>0</mi></mtd>
+      </mtr>
+      <mtr>
+        <mtd><mi>0</mi></mtd>
+        <mtd><mi>0</mi></mtd>
+        <mtd><mi>0</mi></mtd>
+        <mtd><mi>1</mi></mtd>
+      </mtr>
+    </mtable>
+  </mfenced>
+  <mfenced open="(" close=")">
+    <mtable>
+      <mtr>
+        <mtd><mi>10</mi></mtd>
+      </mtr>
+      <mtr>
+        <mtd><mi>10</mi></mtd>
+      </mtr>
+      <mtr>
+        <mtd><mi>10</mi></mtd>
+      </mtr>
+      <mtr>
+        <mtd><mi>1</mi></mtd>
+      </mtr>
+  </mfenced>
+  <mo>=</mo>
+  <mfenced open="(" close=")">
+    <mtable>
+      <mtr>
+        <mtd><mi>20</mi></mtd>
+      </mtr>
+      <mtr>
+        <mtd><mi>10</mi></mtd>
+      </mtr>
+      <mtr>
+        <mtd><mi>10</mi></mtd>
+      </mtr>
+      <mtr>
+        <mtd><mi>1</mi></mtd>
+      </mtr>
+  </mfenced>
+</math>
+
+<ul>
+  <li>The 1 component of the resulting homogeneous vector indicates position, rather than direction.</li>
+</ul>
+
+<h5>References</h5>
+<a href="http://www.opengl-tutorial.org/beginners-tutorials/tutorial-3-matrices/#Translation_matrices">Tutorial 3: Matrices</a>
